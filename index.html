@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pradeep Gupta | Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+        }
+        .header {
+            background: linear-gradient(90deg, #0033ff, #00aaff);
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            position: relative;
+        }
+        .date-time {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 16px;
+            font-weight:normal;
+            color: #000;
+        }
+        .sub-header {
+            font-size: 16px;
+        }
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .hero {
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background: url('images/photo1.jpg') no-repeat center center/cover;
+        }
+        .hero h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .btn {
+            background-color: yellow;
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .footer {
+            background: black;
+            padding: 10px;
+            font-size: 14px;
+        }
+    </style>
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const formattedDate = now.toLocaleString();
+            document.getElementById("date-time").innerText = formattedDate;
+        }
+        setInterval(updateDateTime, 1000);
+    </script>
+</head>
+<body>
+<body onload="updateDateTime()"></body>
+    <div class="header">
+        <div>
+            Pradeep Gupta
+            <div class="sub-header">Software Engineer (DevOps & Backend)</div>
+        </div>
+        <div class="date-time" id="date-time"></div>
+        <div class="nav">
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <div class="hero">
+        <h1>PRADEEP GUPTA</h1>
+        <p>BUILDING SCALABLE & AUTOMATED SOLUTIONS</p>
+        <a href="projects.html" class="btn">EXPLORE MY WORK</a>
+    </div>
+    <div class="footer">
+        © 2024 Pradeep Gupta | <a href="https://github.com/impradeepkumargupta" style="color: white;">GitHub</a> | <a href="https://linkedin.com/in/impradeepkumargupta" style="color: white;">LinkedIn</a>
+    </div>
+</body>
+</html>
